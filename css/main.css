@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/*...........................Общие параметры.............................*/
+
+.navbar-001 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-001 .container {
+    max-width: 100% !important;
+}
+
+.navbar-001 .container .bd-example {
+    width: 100% !important;
+}
+
+.navbar-001 .container .carousel {
+    position: relative;
+}
+
+/*...........................Блок начать демонстрацию..............................*/
+
+.navbar-001 #begin {
+    z-index: 100;
+    background-color: #c4cdd6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+.navbar-001 #begin button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-001 #begin:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+}
+
+/*...........................Превью триггеры.............................*/
+
+.navbar-001 .carousel-indicators {
+    margin: 0 0 20px 0;
+}
+
+.navbar-001 .carousel-indicators li {
+    width: 261px;
+    height: 55px;
+    margin: 0 15px 0 0;
+    padding: 6px;
+    font-size: .75rem;
+    color: #fff;
+    text-indent: 0;
+    border: 0;
+    border-radius: 3px;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .15);
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.navbar-001 .carousel-indicators li:first-of-type {
+    margin-left: 15px;
+}
+
+.navbar-001 .carousel-indicators .active {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.navbar-001 .carousel-indicators li img,
+.navbar-001 .carousel-indicators li .text-wrapper {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.navbar-001 .carousel-indicators li img {
+    border-radius: 3px;
+    height: 55px;
+    -webkit-transition: height 2s;
+    -o-transition: height 2s;
+    transition: height 2s;
+}
+
+.navbar-001 .carousel-indicators li .text-wrapper {
+    max-width: 205px;
+    padding-left: 8px;
+}
+
+.navbar-001 .carousel-indicators li .text-wrapper .promotion {
+    font-size: .6875rem;
+}
+
+.navbar-001 .carousel-indicators li .text-wrapper .description {
+    font-weight: 700;
+}
+
+/*...........................Стрелки.............................*/
+
+.navbar-001 .arrow-wrapper img {
+    height: 17px;
+}
+
+.navbar-001 .arrow-wrapper {
+    height: 85px;
+    width: 11px;
+    margin: auto;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .15);
+    -webkit-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
+}
+
+.navbar-001 .carousel-control-prev {
+    border-radius: 0 3px 3px 0;
+    padding: 0 44px 0 32px;
+}
+.navbar-001 .carousel-control-next {
+    border-radius: 3px 0 0 3px;
+    padding: 0 32px 0 44px;
+}
+
+.navbar-001 .arrow-wrapper:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+/*...........................Главный блок заголовка.............................*/
+
+.navbar-001 .carousel-item .carousel-caption {
+    top: 0;
+    bottom: 0;
+    right: 11%;
+    left: auto;
+    margin: auto;
+    margin-left: 46%;
+    padding: 0;
+    height: 220px;
+    color: #000;
+    text-align: left;
+    -webkit-transition: all 4s;
+    -o-transition: all 4s;
+    transition: all 4s;
+}
+
+.navbar-001 .carousel-item {
+    height: 675px;
+}
+
+.navbar-001 .carousel-item > img {
+    display: inline-block !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+.navbar-001 .carousel-item .carousel-caption .heading-wrapper {
+    margin-bottom: 20px;
+}
+
+.navbar-001 .carousel-item .carousel-caption h2 {
+    font-size: 2.625rem;
+    -webkit-transition: font-size 2s;
+    -o-transition: font-size 2s;
+    transition: font-size 2s;
+}
+
+.navbar-001 .carousel-item .carousel-caption p {
+    font-size: 1.625rem;
+    -webkit-transition: font-size 2s;
+    -o-transition: font-size 2s;
+    transition: font-size 2s;
+}
+
+.navbar-001 .carousel-item .carousel-caption button,
+.navbar-001 #begin button {
+    text-transform: uppercase;
+    padding: 9px 28px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    -webkit-transition: font-size 2s;
+    -o-transition: font-size 2s;
+    transition: font-size 2s;
+}
+
+.navbar-001 .carousel-item .carousel-caption .details,
+.navbar-001 #begin button {
+    margin-right: 18px;
+    background-color: #ff891e;
+    border: 1px solid #ff891e;
+    color: #fff;
+}
+
+.navbar-001 .carousel-item .carousel-caption .all-promotion {
+    background-color: transparent;
+}
+
+
+/*...........................Медиа.............................*/
+
+@media (max-width: 1320px) {
+    .navbar-001 .carousel-item .carousel-caption {
+        right: 0;
+        display: block !important;
+    }
+
+    .navbar-001 .carousel-item .carousel-caption h2 {
+        font-size: 2.1875rem;
+    }
+
+    .navbar-001 .carousel-item .carousel-caption p {
+        font-size: 1.375rem;
+    }
+
+    .navbar-001 .carousel-item > img {
+        -o-object-position: 35%;
+        object-position: 35%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .navbar-001 .carousel-item .carousel-caption button,
+    .navbar-001 #begin button {
+        font-size: 0.8125rem;
+    }
+
+    .navbar-001 .carousel-indicators li {
+        width: 215px;
+        height: 45px;
+        padding: 5px;
+        font-size: .625rem;
+        border-radius: 2px;
+    }
+
+    .navbar-001 .carousel-indicators li .text-wrapper {
+        max-width: 155px;
+        padding-left: 6px;
+    }
+
+    .navbar-001 .carousel-indicators li .text-wrapper .promotion {
+        font-size: .5625rem;
+    }
+
+    .navbar-001 .carousel-indicators li img {
+        height: 45px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .navbar-001 .carousel-item .carousel-caption h2 {
+        font-size: 1.875rem;
+    }
+
+    .navbar-001 .carousel-item .carousel-caption p {
+        font-size: 1.125rem;
+    }
+
+    .navbar-001 .carousel-item .carousel-caption {
+        margin-left: 42%;
+    }
+
+    .navbar-001 .carousel-indicators li {
+        margin-right: 10px;
+    }
+
+    .navbar-001 .carousel-indicators li:first-of-type {
+        margin-left: 10px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .navbar-001 .carousel-indicators li .text-wrapper {
+        font-size: .5625rem;
+        max-width: 138px;
+    }
+
+    .navbar-001 .carousel-indicators li {
+        margin-right: 5px;
+    }
+
+    .navbar-001 .carousel-indicators li:first-of-type {
+        margin-left: 5px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .navbar-001 .carousel-item {
+        height: 400px;
+    }
+
+    .navbar-001 .arrow-wrapper {
+        display: none;
+    }
+
+    .navbar-001 .carousel-item > img {
+        -o-object-position: 0;
+        object-position: 0;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0.3;
+    }
+
+    .navbar-001 .carousel-item .carousel-caption {
+        text-align: center;
+        margin-left: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .navbar-001 .carousel-item .carousel-caption .heading-wrapper{
+        width: 345px;
+        margin: 0 auto;
+    }
+
+    .navbar-001 .carousel-item .carousel-caption .all-promotion {
+        display: none;
+    }
+
+    .navbar-001 .carousel-item .carousel-caption h2 {
+        font-size: 1.5625rem;
+    }
+
+    .navbar-001 .carousel-item .carousel-caption p {
+        font-size: 1.125rem;
+    }
+
+    .navbar-001 .carousel-indicators li img,
+    .navbar-001 .carousel-indicators li .text-wrapper {
+        display: none;
+    }
+
+    .navbar-001 .carousel-indicators li {
+        width: 14px;
+        height: 14px;
+        margin: 0 17px 27px 0;
+        padding: 0;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #282828;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s;
+    }
+
+    .navbar-001 .carousel-indicators li.active {
+        background-color: #282828;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .navbar-001 .carousel-item > img {
+        -o-object-position: 15%;
+        object-position: 15%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .navbar-001 .carousel-item > img {
+        -o-object-position: 17%;
+        object-position: 17%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
